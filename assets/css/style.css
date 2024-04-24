@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(179 159 246);
+  --btn-color: rgb(254 226 21);
+}
+
+.all-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 25px;
+}
+
+.main-header {
+  height: 250px;
+  color: white;
+}
+
+.text-header {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.user-card {
+  max-width: 400px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  min-width: 350px;
+  box-shadow: 0 0 5px black;
+  overflow: hidden;
+  position: relative;
+}
+
+.user-photo-wrapper {
+  width: 400px;
+  height: 250px;
+}
+
+.user-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.male {
+  position: absolute;
+  left: 375px;
+  top: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.add-btn {
+  font-size: 45px;
+  font-weight: 100;
+  color: white;
+  background-color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+  border-radius: 50%;
+  box-shadow: 0 3px 5px black;
+  padding: 13px 16px;
+  position: absolute;
+  left: 310px;
+  top: 220px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: rgba(254, 226, 21, 0.8);
+}
+
+.main-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.media-info {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid gray;
+  text-align: center;
+  position: relative;
+  margin-top: auto;
+}
+
+.info-about-man {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.following,
+.likes {
+  border-left: 1px solid gray;
+}
+
+.followers,
+.following,
+.likes {
+  padding: 35px 25px;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0 auto;
+}
+
+.bold-text {
+  font-size: 35px;
+  font-weight: 700;
+}
